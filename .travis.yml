@@ -22,3 +22,11 @@ before_script:
 
 script:
   - npm run build.prod
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: secure: "Rjz4cdOhTrlNmtIQ83Y3TzvgO5ezGJ1XwYZD0jiPJgluDfHWaSSnXCbSvD5riSE5U6fo0bGR/rfnwsfn1RFo5a5ZwWRQI6MhjgRy4gmn32/15SRjUXpGXxJyhJ3mzXZmIW68KsxBI4l4TX5BCr7yr2Cdu7y2sZqDLtEoGu473hVZA3xbDQ5TTDp4Ge6er54jx6/WPPjD3sA1hzyNk5ttTxpVtljwS5+EVGEYY14gTZgyJL9jev1wZcqbeQdIthcZebIhZ/4eyQNsaZNIV46f0yaoALOo2nIY8nLeykP8hZZ3XdPBq4RLw3cXlUFOSgi3EQJiLHXvr1EkrnWNjq5czx6SCOKfMj2qQXAr4I+LQ77I9abj0Vr/bElVbljSfB0B5PFX+vjORMKh1sDox5d6WTdPKTiKpJL6mE2Pv5uQm1c+qGpX1NP8xBqUyTGVG22VHuutjx83CwA/zm7tFpgfbVlP+sWD7Eg2lmTWk+n1B81LD98wby+WOc+NideTpTd/Ak/a8sV2XYbi53+Y+8TjsAz+SRR3qH0nswO3Fgrcl6LxXvgmBsSm5F8++nqeY17/FMlcrZeQITyYyzyW75h3e4vSPv8CkRAFanNx8ITkMCaUWcn90Fc0VApxkR4wXuc2sxvwLFx02oyR+4Z9sg+tSE93QX8y5aLqTtUnPzAwWT8="  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
