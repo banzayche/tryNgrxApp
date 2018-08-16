@@ -23,6 +23,10 @@ before_script:
 script:
   - npm run build.prod
 
+before_deploy:
+- cd $TRAVIS_BUILD_DIR
+- cd ./dist/tryNgrxStore
+
 deploy:
     provider: pages
     skip_cleanup: true # Prevent travis from cleaning out the branch before the deploy occurs
@@ -30,4 +34,3 @@ deploy:
     keep-history: true
     on:
         branch: master # Build only from master
-        local_dir: dist/tryNgrxStore # Only copy the dist conents
