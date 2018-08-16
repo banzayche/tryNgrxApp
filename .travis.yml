@@ -23,6 +23,8 @@ before_script:
 script:
   - npm run build.prod
 
+before_deploy:
+- cd ./dist
 
 deploy:
     provider: pages
@@ -30,4 +32,3 @@ deploy:
     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     on:
         branch: master # Build only from master
-        local-dir: dist/tryNgrxStore
