@@ -27,6 +27,7 @@ deploy:
     provider: pages
     skip_cleanup: true # Prevent travis from cleaning out the branch before the deploy occurs
     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+    keep-history: true
     on:
         branch: master # Build only from master
-        local_dir: dist # Only copy the dist conents
+        local_dir: dist/tryNgrxStore # Only copy the dist conents
