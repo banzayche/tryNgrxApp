@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build.prod": "npm run build --prod; npm run test.prod;",
+    "build.prod": "ng build --prod; npm run test.prod;",
     "test": "ng test",
-    "test.prod": "npm run test --code-coverage",
+    "test.prod": "ng test --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "get.coverage": "./node_modules/.bin/http-server -c-1 -o -p 9875 ./dist/coverage"
