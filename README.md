@@ -1,5 +1,8 @@
 # TryNgrxStore
 
+### Status
+[![Build Status](https://travis-ci.org/banzayche/tryNgrxApp.svg?branch=master)](https://travis-ci.org/banzayche/tryNgrxApp)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
 ## Development server
