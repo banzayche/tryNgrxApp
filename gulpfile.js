@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var dom = require('gulp-dom');
-const ghpPathPref = './';
+const ghpPathPref = 'tryNgrxApp/';
 
 function fixPathProcedure(arr, attrToFix, pref) {
   for (let index = 0; index < arr.length; index++) {
