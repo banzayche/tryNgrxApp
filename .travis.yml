@@ -23,6 +23,9 @@ before_script:
 script:
   - npm run build.prod
 
+before_deploy:
+  - npm run ghp.fix.paths
+
 deploy:
     provider: pages
     skip_cleanup: true # Prevent travis from cleaning out the branch before the deploy occurs

@@ -10,7 +10,8 @@
     "test.prod": "ng test --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "get.coverage": "./node_modules/.bin/http-server -c-1 -o -p 9875 ./dist/coverage"
+    "get.coverage": "./node_modules/.bin/http-server -c-1 -o -p 9875 ./dist/coverage",
+    "ghp.fix.paths": "./node_modules/.bin/gulp fix.ghp.paths"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +37,8 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
+    "gulp": "^3.9.1",
+    "gulp-dom": "^0.9.17",
     "http-server": "^0.11.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
