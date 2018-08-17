@@ -8,6 +8,7 @@ import { Compose } from './common/decorators/compose';
   styleUrls: ['./app.component.css']
 })
 @Compose(OnClickLogger)
-export class AppComponent {
+export class AppComponent implements OnClickLogger {
+  logHi: () => void;
   title = 'tryNgrxStore';
 }
