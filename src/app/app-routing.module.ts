@@ -8,6 +8,11 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
+  {
+    path: 'tryNgrxApp',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
   { path: 'home', component: HomePageComponent },
   { path: '**', component: NotFoundPageComponent }
 ];
