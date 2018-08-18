@@ -4,17 +4,17 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 const routes: Routes = [
-  { path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
   {
-    path: 'tryNgrxApp',
+    path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
   { path: 'home', component: HomePageComponent },
-  { path: '**', component: NotFoundPageComponent }
+  {
+    path: '**',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
