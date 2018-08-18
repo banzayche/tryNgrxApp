@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { OnClickLogger } from './common/behaviours/on-click-logger';
 import { Compose } from './common/decorators/compose';
-import { prices } from './common/iterable/prices';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +11,4 @@ import { prices } from './common/iterable/prices';
 export class AppComponent implements OnClickLogger {
   logHi: () => void;
   title = 'tryNgrxStore';
-  iterablePrices = prices;
 }

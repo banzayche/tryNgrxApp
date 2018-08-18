@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "tryNgrxStore"
+  "defaultProject": "tryNgrxStore",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
