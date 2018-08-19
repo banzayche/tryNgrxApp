@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TileListComponent } from './tile-list/tile-list.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { ApiService, apiServiceCreator } from './common/http/api.service';
+import { HttpClient } from '../../node_modules/@types/selenium-webdriver/http';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,16 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: ApiService,
+      useFactory: apiServiceCreator,
+      deps: [HttpClient]
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
