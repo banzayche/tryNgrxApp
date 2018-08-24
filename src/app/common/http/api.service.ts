@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '../../../../node_modules/@types/selenium-webdriver/http';
+import { HttpClient } from '@angular/common/http';
 
 export function apiServiceCreator(http: HttpClient) {
   return new ApiService(http);
