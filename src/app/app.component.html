@@ -1,1 +1,15 @@
 <router-outlet></router-outlet>
+
+<h2>Try Store</h2>
+<strong>Counter: </strong> {{count$ | async}}
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" (click)="increment()" class="btn btn-secondary">increase</button>
+  <button type="button" (click)="reset()" class="btn btn-secondary">reset</button>
+  <button type="button" (click)="decrement()" class="btn btn-secondary">decrease</button>
+</div>
+
+<h2>User is</h2>
+<button type="button" (click)="login()" class="btn btn-secondary">Log in</button> <br />
+<button type="button" (click)="logout()" class="btn btn-secondary">Log out</button> <br />
+<strong>User Name: </strong> {{(user$ | async).name}} <br />
+<strong>User Token: </strong> {{(user$ | async).token}}
