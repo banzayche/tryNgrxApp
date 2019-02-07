@@ -1,8 +1,8 @@
-declare interface AppState {
+export interface AppState {
   count: number;
 }
 
-declare interface User {
+export interface User {
   name: string;
   token: string;
 }

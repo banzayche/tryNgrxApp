@@ -3,6 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { INCREMENT, DECREMENT, RESET } from './store/redusers/counter';
 import { LOGIN, LOGOUT } from './store/redusers/authorize';
+import { AppState, User } from './store/models/models';
 
 @Component({
   selector: 'app-root',

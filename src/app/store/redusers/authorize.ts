@@ -1,4 +1,5 @@
-import { Action } from '@ngrx/store';
+import { User } from '../models/models';
+
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_FAILED = 'LOGIN_FAILED';
 export const LOGIN = 'LOGIN';
